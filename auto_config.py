@@ -1,6 +1,10 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
+__author__ = "meiming"
+
+# email : 260548893@qq.com
+
 import urllib2
 import re
 import json
@@ -56,14 +60,19 @@ class AutoConfig(object):
             patternServerInfoItems = re.compile(r"<h4>(.*?)</h4>", re.S)
             serverInfoItems = re.findall(patternServerInfoItems, serverInfoDiv)
             #print serverInfoItems
+
             itemList = []
             for si in serverInfoItems:
                 item = si.split(":")
                 #print item
+
                 # 过滤没有：的项
                 if len(item) < 2:
                     continue
+
+                #获取的内容加入列表
                 itemList.append(item[1])
+
             #如果密码不为空，找到了可用服务器信息
             if len(itemList[2]) != 0:
                 break
