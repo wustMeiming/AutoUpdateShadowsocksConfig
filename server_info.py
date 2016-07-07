@@ -1,6 +1,16 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 class ServerInfo(object):
 
     def __init__(self, server, server_port,local_address,local_port, password,timeout,method,fast_open):
+        """
+        server      你服务端的IP
+        server_port 你服务端的端口
+        local_port  本地端口，一般默认1080
+        password    ss服务端设置的密码
+        timeout     超时设置和服务端一样
+        method      加密方法和服务端一样
+        """
         self.server = server
         self.server_port = server_port
         self.local_address = local_address
@@ -11,7 +21,7 @@ class ServerInfo(object):
         self.fast_open = fast_open
 
     def dump(self):
-        return ''
+        print self.toDict()
 
     def toDict(self):
         info={}
