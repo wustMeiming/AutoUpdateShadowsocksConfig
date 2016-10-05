@@ -49,7 +49,7 @@ class AutoConfig(object):
         #print shadowsocksSection
 
         #通过正则，更加精确的找到免费服务器对应的div
-        patternDiv = re.compile(r"<div class=\"col-lg-4 text-center\">(.*?)</div>", re.S)
+        patternDiv = re.compile(r"<div class=\"col-sm-4 text-center\">(.*?)</div>", re.S)
         serverInfoDivs = re.findall(patternDiv, shadowsocksSection[0])
         #print serverInfoDivs
 
