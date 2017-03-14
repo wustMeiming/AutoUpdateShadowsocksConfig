@@ -44,7 +44,7 @@ class AutoConfig(object):
         :return: 服务器信息
         '''
         #通过正在匹配，定位免费服务器信息块
-        patternFree = re.compile(r"<!-- Free Shadowsocks Section -->(.*?)<!-- Provider list Section -->",re.S)
+        patternFree = re.compile(r"<!-- Free SS Section -->(.*?)<!-- Provider list Section -->",re.S)
         shadowsocksSection = re.findall(patternFree, html)
         #print shadowsocksSection
 
@@ -130,7 +130,7 @@ class AutoConfig(object):
 
 if __name__ == "__main__":
     # 提供免费代理服务器的地址
-    serverUrl = "http://www.ishadowsocks.com/"
+    serverUrl = "http://www.ishadowsocks.org/"
 
     # 配置文件存放位置
     configFile = "/home/meiming/ss_conf.json"
