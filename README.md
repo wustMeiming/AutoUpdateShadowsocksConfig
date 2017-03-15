@@ -1,12 +1,12 @@
-#AutoUpdateShadowsocksConfig
+# AutoUpdateShadowsocksConfig
 
-###环境要求：
+### 环境要求：
 1. 安装shadowsocks（必须）
 2. 代理插件（必须，用于浏览器，如chrome可以安装SwitchyOmega插件）
 2. 安装proxychains（非必须，用于终端代理）
 
 
-###1.ubuntu安装shadowsocks
+### 1.ubuntu安装shadowsocks
 
 用PIP安装很简单
 
@@ -19,7 +19,7 @@ pip install shadowsocks
 ```
 当然你在安装时候肯定有提示需要安装一些依赖比如python-setuptools m2crypto ，依照提示安装然后再安装就好。也可以网上搜索有很多教程的。
 
-####2.启动shadowsocks
+#### 2.启动shadowsocks
 
 安装好后，在本地我们要用到sslocal ，终端输入sslocal --help 可以查看帮助
 
@@ -64,7 +64,7 @@ sslocal -c /home/meiming/ss_conf.json
 >2016-07-08 09:03:56 INFO     starting local at 127.0.0.1:1080
 
 <strong style="color: rgb(255,0,0); font-size: large">我们的脚本的作用就是自动生成配置文件</strong>
-###3. 如何使用我们的脚本
+### 3. 如何使用我们的脚本
 
 1. 首先下载脚本 
 ```bash
