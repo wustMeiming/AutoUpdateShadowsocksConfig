@@ -130,7 +130,8 @@ class AutoConfig(object):
 
 if __name__ == "__main__":
     # 提供免费代理服务器的地址
-    serverUrl = "http://www.ishadowsocks.org/"
+    #serverUrl = "http://www.ishadowsocks.org/"
+    serverUrl = "https://b.ishadow.tech/"
 
     # 配置文件存放位置
     configFile = "/home/meiming/ss_conf.json"
